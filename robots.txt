@@ -1,0 +1,16 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://liushuai.xyz/sitemap.xml
+Sitemap: http://liushuai.xyz/baidusitemap.xml
+Sitemap: http://blunt1973.github.io/sitemap.xml
+Sitemap: http://blunt1973.github.io/baidusitemap.xml
