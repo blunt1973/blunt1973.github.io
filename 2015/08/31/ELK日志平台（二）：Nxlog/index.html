@@ -28,7 +28,7 @@
 
 
 
-  <meta name="keywords" content="Editor,Markdown," />
+  <meta name="keywords" content="Hexo,next" />
 
 
 
@@ -37,41 +37,16 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="在线Markdown编辑器StackEdit特点：
-
-
-
-开源，免费，搭建在github page上，源码寄存在GitHub。
-整合Dropbox和Google Drive，自动同步。
-支持一键发布到Google Blog，Tumblr等，甚至通过ssh push到主机上！
-可左右或者上下分栏，一边显示Markdown语言一边显示效果。
-可以单击左右栏分界线切换至纯写作模式，同样可以收缩顶部工具栏">
+<meta name="description" content="Nxlog是一款日志管理程序，实现日志的收集（shipper）功能，可以在Windows和Linux下运行。有社区版（Community Edition）和商业版（Enterprise Edition）两个版本。我当然是使用社区版啦 ; )　　选用Nxlog的原因是公司有一些Windows平台上的日志需要收集，而Rsyslog实在是难用（包括在Linux上）。不用自己造轮子的情况下Nxlog几乎是">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一个在线Markdown编辑器">
-<meta property="og:url" content="http://blunt1973.github.io/2015/08/20/安利一个在线Markdown编辑器/index.html">
+<meta property="og:title" content="ELK日志平台（二）：Nxlog初探">
+<meta property="og:url" content="http://blunt1973.github.io/2015/08/31/ELK日志平台（二）：Nxlog/index.html">
 <meta property="og:site_name" content="愚人的国度">
-<meta property="og:description" content="在线Markdown编辑器StackEdit特点：
-
-
-
-开源，免费，搭建在github page上，源码寄存在GitHub。
-整合Dropbox和Google Drive，自动同步。
-支持一键发布到Google Blog，Tumblr等，甚至通过ssh push到主机上！
-可左右或者上下分栏，一边显示Markdown语言一边显示效果。
-可以单击左右栏分界线切换至纯写作模式，同样可以收缩顶部工具栏">
-<meta property="og:image" content="https://jeremykun.files.wordpress.com/2015/01/stackedit-logo.png?w=1024&h=338">
-<meta property="og:updated_time" content="2015-08-21T00:55:33.762Z">
+<meta property="og:description" content="Nxlog是一款日志管理程序，实现日志的收集（shipper）功能，可以在Windows和Linux下运行。有社区版（Community Edition）和商业版（Enterprise Edition）两个版本。我当然是使用社区版啦 ; )　　选用Nxlog的原因是公司有一些Windows平台上的日志需要收集，而Rsyslog实在是难用（包括在Linux上）。不用自己造轮子的情况下Nxlog几乎是">
+<meta property="og:updated_time" content="2015-09-04T09:14:22.169Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一个在线Markdown编辑器">
-<meta name="twitter:description" content="在线Markdown编辑器StackEdit特点：
-
-
-
-开源，免费，搭建在github page上，源码寄存在GitHub。
-整合Dropbox和Google Drive，自动同步。
-支持一键发布到Google Blog，Tumblr等，甚至通过ssh push到主机上！
-可左右或者上下分栏，一边显示Markdown语言一边显示效果。
-可以单击左右栏分界线切换至纯写作模式，同样可以收缩顶部工具栏">
+<meta name="twitter:title" content="ELK日志平台（二）：Nxlog初探">
+<meta name="twitter:description" content="Nxlog是一款日志管理程序，实现日志的收集（shipper）功能，可以在Windows和Linux下运行。有社区版（Community Edition）和商业版（Enterprise Edition）两个版本。我当然是使用社区版啦 ; )　　选用Nxlog的原因是公司有一些Windows平台上的日志需要收集，而Rsyslog实在是难用（包括在Linux上）。不用自己造轮子的情况下Nxlog几乎是">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -81,7 +56,7 @@
   };
 </script>
 
-  <title> 一个在线Markdown编辑器 | 愚人的国度 </title>
+  <title> ELK日志平台（二）：Nxlog初探 | 愚人的国度 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -211,7 +186,7 @@
           
           
             
-              一个在线Markdown编辑器
+              ELK日志平台（二）：Nxlog初探
             
           
         </h1>
@@ -220,8 +195,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-08-20T18:08:41+08:00" content="2015-08-20">
-            2015-08-20
+          <time itemprop="dateCreated" datetime="2015-08-31T11:04:47+08:00" content="2015-08-31">
+            2015-08-31
           </time>
         </span>
 
@@ -231,8 +206,8 @@
           
             <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2015/08/20/安利一个在线Markdown编辑器/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/20/安利一个在线Markdown编辑器/" itemprop="commentsCount"></span>
+              <a href="/2015/08/31/ELK日志平台（二）：Nxlog/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/31/ELK日志平台（二）：Nxlog/" itemprop="commentsCount"></span>
               </a>
             </span>
           
@@ -246,53 +221,73 @@
       
 
       
-        <span itemprop="articleBody"><p><img src="https://jeremykun.files.wordpress.com/2015/01/stackedit-logo.png?w=1024&amp;h=338" alt="enter image description here"></p>
-<h4>在线Markdown编辑器<a href="https://stackedit.io" target="_blank" rel="external"><strong>StackEdit</strong></a>特点：</h4>
-
-<blockquote>
+        <span itemprop="articleBody"><p>　　<a href="http://nxlog.org" target="_blank" rel="external">Nxlog</a>是一款日志管理程序，实现日志的收集（shipper）功能，可以在Windows和Linux下运行。有社区版（Community Edition）和商业版（Enterprise Edition）两个版本。我当然是使用社区版啦 ; )<br>　　选用Nxlog的原因是公司有一些Windows平台上的日志需要收集，而Rsyslog实在是难用（包括在Linux上）。不用自己造轮子的情况下Nxlog几乎是唯一的选择。使用下来感觉非常不错，比Rsyslog好用多了，哼~<br>　　<br>　　Ok,Let’s begin.</p>
+<p></p><h2>安装配置</h2><p></p>
+<p></p><h3>安装环境</h3><br>　　- os：Windows Server 2008 R2 Enterprise x64<br>　　- pkg：<a href="http://nxlog.org/system/files/products/files/1/nxlog-ce-2.9.1347.msi" target="_blank" rel="external">nxlog-ce-2.9.1347.msi</a><p></p>
+<p></p><h3>安装步骤</h3><p></p>
+<ol>
+<li>下载之后一路next即可。</li>
+<li>安装完成后nxlog的根目录为C:\Program Files (x86)\nxlog。</li>
+<li>同时在Windows的服务（services.msc）里也会多出来一个名为nxlog的服务，此时服务是未开启的状态。</li>
+</ol>
+<p></p><h3>配置说明</h3><br>　　nxlog的配置文件名为nxlog.conf，在目录下的.\conf下，默认为C:\Program Files (x86)\nxlog\conf\nxlog.conf。打开文件，内容如下：<br>　　<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## This is a sample configuration file. See the nxlog reference manual about the</span></span><br><span class="line"><span class="comment">## configuration options. It should be installed locally and is also available</span></span><br><span class="line"><span class="comment">## online at http://nxlog.org/nxlog-docs/en/nxlog-reference-manual.html</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## Please set the ROOT to the folder your nxlog was installed into,</span></span><br><span class="line"><span class="comment">## otherwise it will not start.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#define ROOT C:\Program Files\nxlog</span></span><br><span class="line">define ROOT C:\Program Files (x86)\nxlog</span><br><span class="line"></span><br><span class="line">Moduledir %ROOT%\modules</span><br><span class="line">CacheDir %ROOT%\data</span><br><span class="line">Pidfile %ROOT%\data\nxlog.pid</span><br><span class="line">SpoolDir %ROOT%\data</span><br><span class="line">LogFile %ROOT%\data\nxlog.log</span><br><span class="line"></span><br><span class="line">&lt;Extension _syslog&gt;</span><br><span class="line">    Module      xm_syslog</span><br><span class="line">&lt;/Extension&gt;</span><br><span class="line"></span><br><span class="line">&lt;Input <span class="keyword">in</span>&gt;</span><br><span class="line">    Module      im_msvistalog</span><br><span class="line"><span class="comment"># For windows 2003 and earlier use the following:</span></span><br><span class="line"><span class="comment">#   Module      im_mseventlog</span></span><br><span class="line">&lt;/Input&gt;</span><br><span class="line"></span><br><span class="line">&lt;Output out&gt;</span><br><span class="line">    Module      om_tcp</span><br><span class="line">    Host        <span class="number">192.168</span>.<span class="number">1.1</span></span><br><span class="line">    Port        <span class="number">514</span></span><br><span class="line">    Exec        to_syslog_snare();</span><br><span class="line">&lt;/Output&gt;</span><br><span class="line"></span><br><span class="line">&lt;Route <span class="number">1</span>&gt;</span><br><span class="line">    Path        <span class="keyword">in</span> =&gt; out</span><br><span class="line">&lt;/Route&gt;</span><br></pre></td></tr></table></figure><p></p>
+<p><br></p>
+<p></p><h4>define</h4><br>　　配置文件中的define用来定义全局变量，可以在后边的配置文件中进行调用。例如下边的变量ACTION就是定义好的一个操作：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">define ACTION <span class="built_in">log</span>_warning(<span class="string">"dropping message"</span>); drop();</span><br><span class="line"></span><br><span class="line">&lt;Input messages&gt;</span><br><span class="line">	Module im_file</span><br><span class="line">	File <span class="string">'/var/log/messages'</span></span><br><span class="line">	Exec <span class="keyword">if</span> <span class="variable">$raw_event</span> =~ /dropme/ %ACTION%</span><br><span class="line">&lt;/Input&gt;</span><br></pre></td></tr></table></figure><p></p>
+<p></p><h4>全局变量</h4><p></p>
 <ul>
-<li>开源，免费，搭建在github page上，源码寄存在GitHub。</li>
-<li>整合Dropbox和Google Drive，自动同步。</li>
-<li>支持一键发布到Google Blog，Tumblr等，甚至通过ssh push到主机上！</li>
-<li>可左右或者上下分栏，一边显示Markdown语言一边显示效果。</li>
-<li>可以单击左右栏分界线切换至纯写作模式，同样可以收缩顶部工具栏。</li>
-<li>在网页顶部工具栏支持加粗、倾斜、超链接、撤消和还原 等等（注意：与Word处理方式有稍许不同）。</li>
-<li>不论在左栏还是右栏滚动页面另一侧也会同步。</li>
-<li>支持Markdown Extra。</li>
-<li>以GIst发布后支持分享（可以在线使用StackEdit阅读）。</li>
-<li>多种保存格式，在线缓存（再也不用担心误关浏览器啦）。</li>
-<li>详细的说明文档。</li>
-<li>界面优美 ; )</li>
+<li>Moduledir 模块根目录</li>
+<li>CacheDir   缓存根目录</li>
+<li>Pidfile       Pid文件路径</li>
+<li>SpoolDir   工程文件目录</li>
+<li>LogFile     日志文件路径</li>
 </ul>
+<p>还可以设置的全局变量：</p>
+<ul>
+<li>User     启动进程的用户（Windows下默认nxlog-processor）</li>
+<li>Group  启动进程的用户组（Windows下默认nxlog-processor）</li>
+<li>LogLevel  日志等级（CRITICAL, ERROR,WARNING, INFO, DEBUG，默认INFO）</li>
+<li>FlowControl 流量控制</li>
+</ul>
+<p>完整全局变量请在<a href="http://nxlog.org/docs" target="_blank" rel="external">官方文档</a>中查询使用。</p>
+<p></p><h4>Extension Module</h4><br>nxlog和logstash一样，是采取模块化的设计，需要什么模块扩展加载即可<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#加载插件 _syslog为标识符，可以自定议</span></span><br><span class="line">&lt;Extension _syslog&gt;</span><br><span class="line"><span class="comment">#加载的插件名为 xm_syslog</span></span><br><span class="line">    Module      xm_syslog</span><br><span class="line">&lt;/Extension&gt;</span><br></pre></td></tr></table></figure><p></p>
+<p>　　常用模块有：</p>
+<ul>
+<li>CSV（xm_csv） 处理CSV格式文件</li>
+<li>JSON（xm_json） 处理JSON格式字段</li>
+<li>XML（xm_xml） 处理XML格式文档</li>
+<li>Multi-line message parser (xm_multiline)  处理多行日志文件</li>
+</ul>
+<p>所有扩展模块请在<a href="http://nxlog.org/docs" target="_blank" rel="external">官方文档</a>中查询使用。</p>
+<p> </p><h4>Input Output工作流</h4><br> 接下来我们来梳理一下，日志收集整个流程：<p></p>
+<blockquote>
+<p>Input(xm_xxx) ——&gt;  Porcessor(pm_xxx) ——&gt; Output(om_xxx)</p>
 </blockquote>
-<p>　　以上内容转自知乎<a href="http://www.zhihu.com/people/su-zi-xiong" target="_blank" rel="external">@<strong>苏子雄</strong></a>在知乎<a href="http://www.zhihu.com/question/19637157" target="_blank" rel="external"><strong>用 Markdown 写作用什么文本编辑器？</strong></a>问题下的答案，我做了一点点的修改和补充。</p>
-<p>　　这篇blog当然也是用<a href="https://stackedit.io" target="_blank" rel="external"><strong>StackEdit</strong></a>来完成的。我只能说：真的好，好出声。有好东西一定要安利给大家。<br>　　<br>　　<a href="https://stackedit.io" target="_blank" rel="external"><strong>猛戳这儿传送至StackEdit！</strong></a></p>
+<ol>
+<li>Input，解决日志从哪里来的问题，通过扩展模块的方式，决定日志从File中读取（im_file），还是从TCP（im_tcp）或者UDP（im_udp）传输进来？默认配置的im_msvistalog，表示日志从im_msvistalog模块输入进来。至于im_msvistalog模块内部如何运作，输出日志的格式又是怎样，请到官方文档中寻找答案。</li>
+<li>Porcessor，解决了接收到日志之后，我要对它做什么的问题。是切割、过滤，还是添加字段、封装成JSON？</li>
+<li>Output，日志输入和处理完毕之后，要发送到哪里？可以直接写入文件（om_file），也可以通过TCP（om_tcp）传输到远端。甚至可以直接插入elasticsearch（om_elasticsearch，nxlog社区版并没有这个模块哈哈哈）建立索引？</li>
+<li>Exec，在上边配置output项目中，有一个Exec        to_syslog_snare(); 这表示在ouput的时候，调用to_syslog_snare()方法。Exec可以在input、porcessor、output中调用，只是后边的方法一定要提前调用对应的Extension Module。</li>
+<li>Route，即路由。nxlog支持多个input、porcessor、output方式同时运行。input和output如何对应，则通过Route来实现。</li>
+</ol>
+<p></p><h2>后记</h2><br>　　简单理解日志收集的工作流程，才能实现我们的心中所想，收集哪些日志，怎么过滤，怎么添加、删除字段，怎么保存等内容。下一篇博客将用一个生产环境中的例子来完整展示上述内容。<p></p>
+<p>　　附：<br>　　<a href="http://nxlog.org/products/nxlog-community-edition/download" target="_blank" rel="external">Nxlog社区版下载地址</a><br>　　<a href="http://nxlog.org/docs" target="_blank" rel="external">Nxlog官方文档</a></p>
+<p>　　</p>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Editor/" rel="tag">#Editor</a>
-          
-            <a href="/tags/Markdown/" rel="tag">#Markdown</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/08/21/ELK日志平台（一）：框架结构/" rel="prev">ELK日志平台（一）：框架结构</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/08/20/开博啦/" rel="next">开博again啦</a>
+              <a href="/2015/08/21/ELK日志平台（一）：框架结构/" rel="next">ELK日志平台（一）：框架结构</a>
             
           </div>
         </div>
@@ -317,8 +312,8 @@
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2015/08/20/安利一个在线Markdown编辑器/"
-                   data-title="一个在线Markdown编辑器" data-url="http://blunt1973.github.io/2015/08/20/安利一个在线Markdown编辑器/">
+              <div class="ds-thread" data-thread-key="2015/08/31/ELK日志平台（二）：Nxlog/"
+                   data-title="ELK日志平台（二）：Nxlog初探" data-url="http://blunt1973.github.io/2015/08/31/ELK日志平台（二）：Nxlog/">
               </div>
             
           </div>
@@ -400,7 +395,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">在线Markdown编辑器StackEdit特点：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">安装配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">安装环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.</span> <span class="nav-text">安装步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.</span> <span class="nav-text">配置说明</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.1.</span> <span class="nav-text">define</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.2.</span> <span class="nav-text">全局变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.3.</span> <span class="nav-text">Extension Module</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.4.</span> <span class="nav-text">Input Output工作流</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">后记</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
